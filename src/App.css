@@ -1,0 +1,118 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 5em;
+  padding: 1.5em;
+  will-change: filter;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* CALCULATOR */
+.calculator-container {
+  min-width: 400px;
+  height: 100%;
+  display: inline-block;
+}
+
+.calculator-output__container {
+  height: 10em;
+  background-color: #3b5998;
+  color: #fff;
+}
+.calculator-output__display {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  text-align: right;
+  font-size: 3em;
+}
+.calculator-input__display {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  text-align: right;
+  font-size: 1.5em;
+}
+.calculator-text__display {
+  width: 100%;
+  display: inline-block;
+  align-self: flex-end;
+  margin: 10px;
+}
+.calculator-inputs__container {
+  width: 100%;
+  display: grid;
+  padding: 0;
+  grid-template-columns: auto auto auto auto;
+}
+.input_grid {
+  background-color: #dfe3ee;
+  text-align: center;
+  font-size: 2em;
+  float: left;
+}
+.input_grid-zero {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.input_grid-lg {
+  background-color: #dfe3ee;
+  text-align: center;
+  font-size: 2.5em;
+  float: left;
+}
+button {
+  color: #3b5998;
+  border-radius: 0;
+  width: 100%;
+  border: 1px solid #e2e2e2;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+.last-column > button {
+  background-color: #8b9dc3 !important;
+  color: #fff;
+}
+.last-column > button:hover {
+  background-color: #bdc7dd !important;
+}
